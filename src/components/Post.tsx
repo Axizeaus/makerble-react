@@ -14,7 +14,9 @@ interface PostProps {
 
 const Post: React.FC<PostProps> = ({ poster }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 max-w-lg w-full mx-auto mb-4">
+    <div className="bg-white rounded-lg shadow-md p-4 w-full mx-auto my-4">
+      {" "}
+      {/* Removed max-w-xl */}
       <div className="flex items-center mb-4">
         <img
           src={poster.profilePic}

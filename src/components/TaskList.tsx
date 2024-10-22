@@ -32,7 +32,7 @@ const TaskList: React.FC = () => {
 
   return (
     <div className="p-4 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4">To-Do List</h2>
+      <h2 className="text-2xl font-bold mb-4">Tasks</h2>
       <div className="flex mb-4">
         <input
           type="text"

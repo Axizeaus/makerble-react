@@ -15,9 +15,9 @@ const PersonalProgress: React.FC<PersonalProgressProps> = ({
   progressData,
 }) => {
   return (
-    <div className="p-4 bg-gray-100 rounded-lg shadow-md">
+    <div className="p-4 rounded-lg shadow-md">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">Personal Progress</h2>
+        <h4 className="text-sm font-semibold">Personal Progress</h4>
         <a href="/board" className="text-blue-600 hover:underline">
           Board
         </a>

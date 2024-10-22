@@ -1,5 +1,5 @@
 import React from "react";
-import UserProfile from "./UserProfile";
+import ContactProfile from "./ContactProfile";
 import { Filter, PlusCircle } from "lucide-react";
 import Followers from "./Followers"; // Import Followers component
 import Following from "./Following"; // Import Following component
@@ -14,11 +14,11 @@ const Contacts: React.FC = () => {
   };
 
   const contacts = [
-    { avatar: "https://via.placeholder.com/150", name: "John Doe" },
-    { avatar: "https://via.placeholder.com/150", name: "Jane Smith" },
-    { avatar: "https://via.placeholder.com/150", name: "Alice Johnson" },
-    { avatar: "https://via.placeholder.com/150", name: "Bob Brown" },
-    { avatar: "https://via.placeholder.com/150", name: "Charlie Davis" },
+    { avatar: "https://picsum.photos/150?random=1", name: "John Doe" },
+    { avatar: "https://picsum.photos/150?random=2", name: "Jane Smith" },
+    { avatar: "https://picsum.photos/150?random=3", name: "Alice Johnson" },
+    { avatar: "https://picsum.photos/150?random=4", name: "Bob Brown" },
+    { avatar: "https://picsum.photos/150?random=5", name: "Charlie Davis" },
   ];
 
   return (
@@ -36,7 +36,7 @@ const Contacts: React.FC = () => {
       </div>
       <div className="flex flex-col space-y-4">
         {contacts.map((contact, index) => (
-          <UserProfile
+          <ContactProfile
             key={index}
             avatar={contact.avatar}
             name={contact.name}

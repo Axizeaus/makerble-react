@@ -1,11 +1,18 @@
 import MobileNavItem from "./MobileNavItem";
 import NavItem from "./NavItem";
 
-const navigationItems = [
+interface NavigationItem {
+  to: string;
+  label: string;
+}
+
+const navigationItems: NavigationItem[] = [
   { to: "/", label: "Home" },
   { to: "/projects", label: "Projects" },
   { to: "/organisations", label: "Organisations" },
   { to: "/album", label: "Album" },
+  { to: "/explore", label: "Explore" },
+  { to: "/boards", label: "Boards" },
 ];
 
 export const NavigationItems = {

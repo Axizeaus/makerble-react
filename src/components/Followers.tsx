@@ -7,11 +7,11 @@ interface Follower {
 
 const Followers: React.FC = () => {
   const followers: Follower[] = [
-    { avatar: "https://via.placeholder.com/50" },
-    { avatar: "https://via.placeholder.com/50" },
-    { avatar: "https://via.placeholder.com/50" },
-    { avatar: "https://via.placeholder.com/50" },
-    { avatar: "https://via.placeholder.com/50" },
+    { avatar: "https://picsum.photos/50?random=1" },
+    { avatar: "https://picsum.photos/50?random=2" },
+    { avatar: "https://picsum.photos/50?random=3" },
+    { avatar: "https://picsum.photos/50?random=4" },
+    { avatar: "https://picsum.photos/50?random=5" },
   ];
 
   return (

@@ -24,6 +24,7 @@ const AddPost: React.FC = () => {
 
   const onSubmit = (data: any) => {
     console.log("Post submitted:", data);
+    alert("your post has been submitted successfully.");
   };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -34,9 +35,8 @@ const AddPost: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="p-6 bg-white rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl"
+      className="p-6 bg-white rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl "
     >
-      <h2 className="text-2xl font-bold mb-4">Create a New Post</h2>
       <Controller
         name="content"
         control={control}
@@ -61,7 +61,7 @@ const AddPost: React.FC = () => {
       )}
       <button
         type="submit"
-        className="mt-4 flex items-center justify-center bg-blue-500 text-white px-4 py-2 rounded-md transition-colors duration-200 hover:bg-blue-600"
+        className="mt-4 flex items-center justify-center bg-blue-500 text-white px-4 py-2 rounded-md transition-colors duration-200 hover:bg-blue-600 ml-auto"
       >
         <Send className="mr-2" />
         Submit

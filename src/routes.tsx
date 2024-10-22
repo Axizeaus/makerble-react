@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Organisations from "./pages/Organisations";
 import Album from "./pages/Album";
+import Boards from "./pages/Boards";
+import Explore from "./pages/Explore";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
       {
         path: "organisations",
         element: <Organisations />,
+      },
+      {
+        path: "explore",
+        element: <Explore />,
+      },
+      {
+        path: "boards",
+        element: <Boards />,
       },
     ],
   },
