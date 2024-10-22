@@ -13,7 +13,7 @@ const Layout: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen antialiased">
       <header className="bg-white text-black">
-        <nav className="container mx-auto p-4 flex justify-between items-center">
+        <nav className="container mx-auto max-w-7xl p-4 flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/">
               <img src="/makerble-logo.png" alt="Logo" className="h-7 mr-4" />
@@ -53,7 +53,7 @@ const Layout: React.FC = () => {
         )}
       </header>
 
-      <main className="flex-grow container mx-auto p-4">
+      <main className="flex-grow container mx-auto max-w-7xl p-4">
         <Outlet />
       </main>
     </div>
