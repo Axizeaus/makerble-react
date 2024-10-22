@@ -33,7 +33,7 @@ const TaskList: React.FC = () => {
   return (
     <div className="p-4 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-4">Tasks</h2>
-      <div className="flex mb-4">
+      <div className="flex items-center mb-4 flex-col ">
         <input
           type="text"
           value={newTask}
@@ -41,10 +41,15 @@ const TaskList: React.FC = () => {
           placeholder="Add a new task"
           className="border rounded p-2 flex-grow mr-2"
         />
-        <button onClick={handleAddTask}>
+        <button
+          onClick={handleAddTask}
+          className="p-2  rounded flex m-2 flex-grow bg-blue-500 justify-center items-center "
+        >
+          add task
           <CirclePlusIcon />
         </button>
       </div>
+
       {tasks.map((task, index) => (
         <Task
           key={index}
